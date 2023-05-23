@@ -1,6 +1,6 @@
-# kontener
+# Bérkft
 
-Feladat 0814 állományát használjuk.
+Dolgozat 3
 
 Olvass be a fájl tartalmát, egy megfelelő 
 adatszerkezetbe.
