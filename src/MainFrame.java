@@ -1,3 +1,12 @@
+/*
+* File: MainFrame.java
+* Author: Kovács Attila
+* Copyright: 2023,Kovács Attila
+* Group: Szoft 1/1/N
+* Date: 2023-05-23
+* Github: https://github.com/Attila732/berfkt
+* Licenc: GNU GPL
+*/
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -42,8 +51,7 @@ public class MainFrame extends JFrame{
         this.add(this.birthPanel);
         this.add(this.salaryPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(400, 250);
-        // this.pack();
+        this.setSize(500, 350);
         this.setVisible(true);        
     }
     public JPanel getButtonPanel() {

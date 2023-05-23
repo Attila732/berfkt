@@ -1,3 +1,12 @@
+/*
+* File: LoadFile.java
+* Author: Kovács Attila
+* Copyright: 2023,Kovács Attila
+* Group: Szoft 1/1/N
+* Date: 2023-05-23
+* Github: https://github.com/Attila732/berfkt
+* Licenc: GNU GPL
+*/
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
@@ -6,7 +15,7 @@ import java.util.Scanner;
 
 public class LoadFile {
 
-    static final String FILE_NAME = "kontenerkft.txt";
+    static final String FILE_NAME = "berkft.txt";
     public LoadFile() {
     }
 
@@ -23,11 +32,10 @@ public class LoadFile {
     public static ArrayList<Employee> tryLoad() throws FileNotFoundException {
         ArrayList<Employee> employeeList = new ArrayList<>();
         File file = new File(FILE_NAME);
-        Scanner scanner = new Scanner(file, "utf-8");
-        // String firstRow = scanner.nextLine();       
+        Scanner scanner = new Scanner(file, "utf-8");     
         while(scanner.hasNext()) {
             String line = scanner.nextLine();
-            String[] lineArray = line.split("#");
+            String[] lineArray = line.split(":");
             Employee emp = new Employee();
             emp.name = lineArray[0];
             emp.city = lineArray[1];
